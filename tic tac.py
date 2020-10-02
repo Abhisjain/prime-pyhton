@@ -55,7 +55,7 @@ def replay():
 while True:
     clear_output()
     print('Welcome to Tic Tac Toe!')
-    
+    print('good luck have fun')
     toggle = random_player()
     player = players[toggle]
     print('For this round, Player %s will go first!' %(player))
@@ -84,6 +84,6 @@ while True:
     # reset the board and available moves list
     theBoard = [' '] * 10
     available = [str(num) for num in range(0,10)]
-    
+    #break condition
     if not replay():
         break
